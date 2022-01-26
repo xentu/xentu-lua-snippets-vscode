@@ -1,0 +1,986 @@
+{
+    "game.path": {
+        "body": "game.path",
+        "description": "5.3\n\ngame.path",
+        "prefix": "game.path",
+        "scope": "game.lua"
+    },
+    "game.fullscreen": {
+        "body": "game.fullscreen",
+        "description": "5.3\n\ngame.fullscreen",
+        "prefix": "game.fullscreen",
+        "scope": "game.lua"
+    },
+    "game.debug_stack": {
+        "body": "game.debug_stack()",
+        "description": "5.3\n\ngame.debug_stack()",
+        "prefix": "game.debug_stack",
+        "scope": "game.lua"
+    },
+    "game.exit": {
+        "body": "game.exit()",
+        "description": "5.3\n\ngame.exit()",
+        "prefix": "game.exit",
+        "scope": "game.lua"
+    },
+    "game.set_fullscreen": {
+        "body": "game.set_fullscreen(${0:false})",
+        "description": "5.3\n\ngame.set_fullscreen(bool)",
+        "prefix": "game.set_fullscreen",
+        "scope": "game.lua"
+    },
+    "game.on": {
+        "body": "game.on('${0:event}', function()\n\t--code goes here\nend)",
+        "description": "5.3\n\ngame.on(event, func)",
+        "prefix": "game.on",
+        "scope": "game.lua"
+    },
+	"game.set_scene": {
+        "body": "game.set_scene(${0:scene})",
+        "description": "5.3\n\ngame.set_scene(scene)",
+        "prefix": "game.set_scene",
+        "scope": "game.lua"
+    },
+	"game.trigger": {
+        "body": "game.trigger('${0:event}')",
+        "description": "5.3\n\ngame.trigger(event)",
+        "prefix": "game.trigger",
+        "scope": "game.lua"
+    },
+	"game.trigger_with": {
+        "body": "game.trigger_with('${0:event}', ${1:data})",
+        "description": "5.3\n\ngame.trigger_with(event [, data])",
+        "prefix": "game.trigger_with",
+        "scope": "game.lua"
+    },
+	"assets.load_audio": {
+        "body": "assets.load_audio('${0:file}')",
+        "description": "5.3\n\nassets.load_audio(file)",
+        "prefix": "assets.load_audio",
+        "scope": "assets.lua"
+    },
+	"assets.load_shader": {
+        "body": "assets.load_shader('${0:vert_file}', '${1:frag_file}')",
+        "description": "5.3\n\nassets.load_shader(vert_file, frag_file)",
+        "prefix": "assets.load_shader",
+        "scope": "assets.lua"
+    },
+	"assets.load_texture": {
+        "body": "assets.load_texture('${0:file}')",
+        "description": "5.3\n\nassets.load_texture(file)",
+        "prefix": "assets.load_texture",
+        "scope": "assets.lua"
+    },
+	"assets.load_spritemap": {
+        "body": "assets.load_spritemap('${0:file}')",
+        "description": "5.3\n\nassets.load_spritemap(file)",
+        "prefix": "assets.load_spritemap",
+        "scope": "assets.lua"
+    },
+	"assets.load_tilemap": {
+        "body": "assets.load_tilemap('${0:file}')",
+        "description": "5.3\n\nassets.load_tilemap(file)",
+        "prefix": "assets.load_tilemap",
+        "scope": "assets.lua"
+    },
+	"renderer.clear": {
+        "body": "renderer.clear()",
+        "description": "5.3\n\nrenderer.clear()",
+        "prefix": "renderer.clear",
+        "scope": "renderer.lua"
+    },
+	"renderer.begin": {
+        "body": "renderer.begin()",
+        "description": "5.3\n\nrenderer.begin()",
+        "prefix": "renderer.begin",
+        "scope": "renderer.lua"
+    },
+	"renderer.present": {
+        "body": "renderer.present()",
+        "description": "5.3\n\nrenderer.present()",
+        "prefix": "renderer.present",
+        "scope": "renderer.lua"
+    },
+	"renderer.draw_sprite": {
+        "body": "renderer.draw_sprite(${0:sprite})",
+        "description": "5.3\n\nrenderer.draw_sprite(sprite)",
+        "prefix": "renderer.draw_sprite",
+        "scope": "renderer.lua"
+    },
+	"renderer.draw_rect": {
+        "body": "renderer.draw_sprite(${0:color},${1:0},${2:0},${3:100},${4:100})",
+        "description": "5.3\n\nrenderer.draw_sprite(color, x, y, width, height)",
+        "prefix": "renderer.draw_sprite",
+        "scope": "renderer.lua"
+    },
+	"renderer.draw_tilemap_layer": {
+        "body": "renderer.draw_tilemap_layer(${0:layer})",
+        "description": "5.3\n\nrenderer.draw_tilemap_layer(layer)",
+        "prefix": "renderer.draw_tilemap_layer",
+        "scope": "renderer.lua"
+    },
+	"renderer.draw_text": {
+        "body": "renderer.draw_text(${0:font},'${1:text}',${2:0},${3:0},${4:100})",
+        "description": "5.3\n\nrenderer.draw_text(font, text, x, y, max_width)",
+        "prefix": "renderer.draw_text",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_blend": {
+        "body": "renderer.set_blend(${0:true})",
+        "description": "5.3\n\nrenderer.set_blend(bool)",
+        "prefix": "renderer.set_blend",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_blend_func": {
+        "body": "renderer.set_blend_func(${0:sfactor}, ${1:dfactor})",
+        "description": "5.3\n\nrenderer.set_blend_func(sfactor, dfactor)",
+        "prefix": "renderer.set_blend_func",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_clear_color": {
+        "body": "renderer.set_clear_color(${0:color})",
+        "description": "5.3\n\nrenderer.set_clear_color(color)",
+        "prefix": "renderer.set_clear_color",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_origin": {
+        "body": "renderer.set_origin(${0:0.0}, ${1:0.0})",
+        "description": "5.3\n\nrenderer.set_origin(x, y)",
+        "prefix": "renderer.set_origin",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_rotation": {
+        "body": "renderer.set_rotation(${0:0.0})",
+        "description": "5.3\n\nrenderer.set_rotation(angle)",
+        "prefix": "renderer.set_rotation",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_scale": {
+        "body": "renderer.set_scale(${0:1.0}, ${1:1.0})",
+        "description": "5.3\n\nrenderer.set_scale(width, height)",
+        "prefix": "renderer.set_scale",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_position": {
+        "body": "renderer.set_position(${0:0.0}, ${1:0.0})",
+        "description": "5.3\n\nrenderer.set_position(x, y)",
+        "prefix": "renderer.set_position",
+        "scope": "renderer.lua"
+    },
+    "renderer.set_shader": {
+        "body": "renderer.set_shader(${0:shader})",
+        "description": "5.3\n\nrenderer.set_shader(shader)",
+        "prefix": "renderer.set_shader",
+        "scope": "renderer.lua"
+    },
+    "audio.is_playing": {
+        "body": "audio.is_playing(${0:sound})",
+        "description": "5.3\n\naudio.is_playing(sound)",
+        "prefix": "audio.is_playing",
+        "scope": "audio.lua"
+    },
+    "audio.play": {
+        "body": "audio.play(${0:sound})",
+        "description": "5.3\n\naudio.play(sound)",
+        "prefix": "audio.is_playing",
+        "scope": "audio.lua"
+    },
+    "audio.set_volume": {
+        "body": "audio.set_volume(${0:sound}, ${1:1.0})",
+        "description": "5.3\n\naudio.set_volume(sound, volume)",
+        "prefix": "audio.set_volume",
+        "scope": "audio.lua"
+    },
+    "audio.stop": {
+        "body": "audio.stop(${0:sound})",
+        "description": "5.3\n\naudio.stop(sound)",
+        "prefix": "audio.stop",
+        "scope": "audio.lua"
+    },
+    "keyboard.key_clicked": {
+        "body": "keyboard.key_clicked(${0:key})",
+        "description": "5.3\n\nkeyboard.key_clicked(key)",
+        "prefix": "keyboard.key_clicked",
+        "scope": "keyboard.lua"
+    },
+    "keyboard.key_down": {
+        "body": "keyboard.key_down(${0:key})",
+        "description": "5.3\n\nkeyboard.key_down(key)",
+        "prefix": "keyboard.key_down",
+        "scope": "keyboard.lua"
+    },
+    "mouse.mouse_x": {
+        "body": "mouse.mouse_x",
+        "description": "5.3\n\nmouse.mouse_x",
+        "prefix": "mouse.mouse_x",
+        "scope": "mouse.lua"
+    },
+    "mouse.mouse_y": {
+        "body": "mouse.mouse_y",
+        "description": "5.3\n\nmouse.mouse_y",
+        "prefix": "mouse.mouse_y",
+        "scope": "mouse.lua"
+    },
+    "mouse.button_down": {
+        "body": "mouse.button_down(${0:key})",
+        "description": "5.3\n\nmouse.button_down(key)",
+        "prefix": "mouse.key_down",
+        "scope": "mouse.lua"
+    },
+    "viewport.width": {
+        "body": "viewport.width",
+        "description": "5.3\n\nviewport.width",
+        "prefix": "viewport.width",
+        "scope": "viewport.lua"
+    },
+    "viewport.height": {
+        "body": "viewport.height",
+        "description": "5.3\n\nviewport.height",
+        "prefix": "viewport.height",
+        "scope": "viewport.lua"
+    },
+    "config.get_string": {
+        "body": "config.get_string('${0:general.name}')",
+        "description": "5.3\n\nconfig.get_string(group_and_name)",
+        "prefix": "config.get_string",
+        "scope": "config.lua"
+    },
+    "config.get_integer": {
+        "body": "config.get_integer('${0:general.name}')",
+        "description": "5.3\n\nconfig.get_integer(group_and_name)",
+        "prefix": "config.get_integer",
+        "scope": "config.lua"
+    }
+	"KB_SPACE": {
+		"body": "KB_SPACE",
+		"description": "5.3\n\nKB_SPACE",
+		"prefix": "KB_SPACE",
+		"scope": "keyboard.lua"
+	},
+	"KB_APOSTROPHE": {
+		"body": "KB_APOSTROPHE",
+		"description": "5.3\n\nKB_APOSTROPHE",
+		"prefix": "KB_APOSTROPHE",
+		"scope": "keyboard.lua"
+	},
+	"KB_COMMA": {
+		"body": "KB_COMMA",
+		"description": "5.3\n\nKB_COMMA",
+		"prefix": "KB_COMMA",
+		"scope": "keyboard.lua"
+	},
+	"KB_MINUS": {
+		"body": "KB_MINUS",
+		"description": "5.3\n\nKB_MINUS",
+		"prefix": "KB_MINUS",
+		"scope": "keyboard.lua"
+	},
+	"KB_PERIOD": {
+		"body": "KB_PERIOD",
+		"description": "5.3\n\nKB_PERIOD",
+		"prefix": "KB_PERIOD",
+		"scope": "keyboard.lua"
+	},
+	"KB_SLASH": {
+		"body": "KB_SLASH",
+		"description": "5.3\n\nKB_SLASH",
+		"prefix": "KB_SLASH",
+		"scope": "keyboard.lua"
+	},
+	"KB_0": {
+		"body": "KB_0",
+		"description": "5.3\n\nKB_0",
+		"prefix": "KB_0",
+		"scope": "keyboard.lua"
+	},
+	"KB_1": {
+		"body": "KB_1",
+		"description": "5.3\n\nKB_1",
+		"prefix": "KB_1",
+		"scope": "keyboard.lua"
+	},
+	"KB_2": {
+		"body": "KB_2",
+		"description": "5.3\n\nKB_2",
+		"prefix": "KB_2",
+		"scope": "keyboard.lua"
+	},
+	"KB_3": {
+		"body": "KB_3",
+		"description": "5.3\n\nKB_3",
+		"prefix": "KB_3",
+		"scope": "keyboard.lua"
+	},
+	"KB_4": {
+		"body": "KB_4",
+		"description": "5.3\n\nKB_4",
+		"prefix": "KB_4",
+		"scope": "keyboard.lua"
+	},
+	"KB_5": {
+		"body": "KB_5",
+		"description": "5.3\n\nKB_5",
+		"prefix": "KB_5",
+		"scope": "keyboard.lua"
+	},
+	"KB_6": {
+		"body": "KB_6",
+		"description": "5.3\n\nKB_6",
+		"prefix": "KB_6",
+		"scope": "keyboard.lua"
+	},
+	"KB_7": {
+		"body": "KB_7",
+		"description": "5.3\n\nKB_7",
+		"prefix": "KB_7",
+		"scope": "keyboard.lua"
+	},
+	"KB_8": {
+		"body": "KB_8",
+		"description": "5.3\n\nKB_8",
+		"prefix": "KB_8",
+		"scope": "keyboard.lua"
+	},
+	"KB_9": {
+		"body": "KB_9",
+		"description": "5.3\n\nKB_9",
+		"prefix": "KB_9",
+		"scope": "keyboard.lua"
+	},
+	"KB_SEMICOLON": {
+		"body": "KB_SEMICOLON",
+		"description": "5.3\n\nKB_SEMICOLON",
+		"prefix": "KB_SEMICOLON",
+		"scope": "keyboard.lua"
+	},
+	"KB_EQUAL": {
+		"body": "KB_EQUAL",
+		"description": "5.3\n\nKB_EQUAL",
+		"prefix": "KB_EQUAL",
+		"scope": "keyboard.lua"
+	},
+	"KB_A": {
+		"body": "KB_A",
+		"description": "5.3\n\nKB_A",
+		"prefix": "KB_A",
+		"scope": "keyboard.lua"
+	},
+	"KB_B": {
+		"body": "KB_B",
+		"description": "5.3\n\nKB_B",
+		"prefix": "KB_B",
+		"scope": "keyboard.lua"
+	},
+	"KB_C": {
+		"body": "KB_C",
+		"description": "5.3\n\nKB_C",
+		"prefix": "KB_C",
+		"scope": "keyboard.lua"
+	},
+	"KB_D": {
+		"body": "KB_D",
+		"description": "5.3\n\nKB_D",
+		"prefix": "KB_D",
+		"scope": "keyboard.lua"
+	},
+	"KB_E": {
+		"body": "KB_E",
+		"description": "5.3\n\nKB_E",
+		"prefix": "KB_E",
+		"scope": "keyboard.lua"
+	},
+	"KB_F": {
+		"body": "KB_F",
+		"description": "5.3\n\nKB_F",
+		"prefix": "KB_F",
+		"scope": "keyboard.lua"
+	},
+	"KB_G": {
+		"body": "KB_G",
+		"description": "5.3\n\nKB_G",
+		"prefix": "KB_G",
+		"scope": "keyboard.lua"
+	},
+	"KB_H": {
+		"body": "KB_H",
+		"description": "5.3\n\nKB_H",
+		"prefix": "KB_H",
+		"scope": "keyboard.lua"
+	},
+	"KB_I": {
+		"body": "KB_I",
+		"description": "5.3\n\nKB_I",
+		"prefix": "KB_I",
+		"scope": "keyboard.lua"
+	},
+	"KB_J": {
+		"body": "KB_J",
+		"description": "5.3\n\nKB_J",
+		"prefix": "KB_J",
+		"scope": "keyboard.lua"
+	},
+	"KB_K": {
+		"body": "KB_K",
+		"description": "5.3\n\nKB_K",
+		"prefix": "KB_K",
+		"scope": "keyboard.lua"
+	},
+	"KB_L": {
+		"body": "KB_L",
+		"description": "5.3\n\nKB_L",
+		"prefix": "KB_L",
+		"scope": "keyboard.lua"
+	},
+	"KB_M": {
+		"body": "KB_M",
+		"description": "5.3\n\nKB_M",
+		"prefix": "KB_M",
+		"scope": "keyboard.lua"
+	},
+	"KB_N": {
+		"body": "KB_N",
+		"description": "5.3\n\nKB_N",
+		"prefix": "KB_N",
+		"scope": "keyboard.lua"
+	},
+	"KB_O": {
+		"body": "KB_O",
+		"description": "5.3\n\nKB_O",
+		"prefix": "KB_O",
+		"scope": "keyboard.lua"
+	},
+	"KB_P": {
+		"body": "KB_P",
+		"description": "5.3\n\nKB_P",
+		"prefix": "KB_P",
+		"scope": "keyboard.lua"
+	},
+	"KB_Q": {
+		"body": "KB_Q",
+		"description": "5.3\n\nKB_Q",
+		"prefix": "KB_Q",
+		"scope": "keyboard.lua"
+	},
+	"KB_R": {
+		"body": "KB_R",
+		"description": "5.3\n\nKB_R",
+		"prefix": "KB_R",
+		"scope": "keyboard.lua"
+	},
+	"KB_S": {
+		"body": "KB_S",
+		"description": "5.3\n\nKB_S",
+		"prefix": "KB_S",
+		"scope": "keyboard.lua"
+	},
+	"KB_T": {
+		"body": "KB_T",
+		"description": "5.3\n\nKB_T",
+		"prefix": "KB_T",
+		"scope": "keyboard.lua"
+	},
+	"KB_U": {
+		"body": "KB_U",
+		"description": "5.3\n\nKB_U",
+		"prefix": "KB_U",
+		"scope": "keyboard.lua"
+	},
+	"KB_V": {
+		"body": "KB_V",
+		"description": "5.3\n\nKB_V",
+		"prefix": "KB_V",
+		"scope": "keyboard.lua"
+	},
+	"KB_W": {
+		"body": "KB_W",
+		"description": "5.3\n\nKB_W",
+		"prefix": "KB_W",
+		"scope": "keyboard.lua"
+	},
+	"KB_X": {
+		"body": "KB_X",
+		"description": "5.3\n\nKB_X",
+		"prefix": "KB_X",
+		"scope": "keyboard.lua"
+	},
+	"KB_Y": {
+		"body": "KB_Y",
+		"description": "5.3\n\nKB_Y",
+		"prefix": "KB_Y",
+		"scope": "keyboard.lua"
+	},
+	"KB_Z": {
+		"body": "KB_Z",
+		"description": "5.3\n\nKB_Z",
+		"prefix": "KB_Z",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT_BRACKET": {
+		"body": "KB_LEFT_BRACKET",
+		"description": "5.3\n\nKB_LEFT_BRACKET",
+		"prefix": "KB_LEFT_BRACKET",
+		"scope": "keyboard.lua"
+	},
+	"KB_BACKSLASH": {
+		"body": "KB_BACKSLASH",
+		"description": "5.3\n\nKB_BACKSLASH",
+		"prefix": "KB_BACKSLASH",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT_BRACKET": {
+		"body": "KB_RIGHT_BRACKET",
+		"description": "5.3\n\nKB_RIGHT_BRACKET",
+		"prefix": "KB_RIGHT_BRACKET",
+		"scope": "keyboard.lua"
+	},
+	"KB_GRAVE_ACCENT": {
+		"body": "KB_GRAVE_ACCENT",
+		"description": "5.3\n\nKB_GRAVE_ACCENT",
+		"prefix": "KB_GRAVE_ACCENT",
+		"scope": "keyboard.lua"
+	},
+	"KB_WORLD_1": {
+		"body": "KB_WORLD_1",
+		"description": "5.3\n\nKB_WORLD_1",
+		"prefix": "KB_WORLD_1",
+		"scope": "keyboard.lua"
+	},
+	"KB_WORLD_2": {
+		"body": "KB_WORLD_2",
+		"description": "5.3\n\nKB_WORLD_2",
+		"prefix": "KB_WORLD_2",
+		"scope": "keyboard.lua"
+	},
+	"KB_ESCAPE": {
+		"body": "KB_ESCAPE",
+		"description": "5.3\n\nKB_ESCAPE",
+		"prefix": "KB_ESCAPE",
+		"scope": "keyboard.lua"
+	},
+	"KB_ENTER": {
+		"body": "KB_ENTER",
+		"description": "5.3\n\nKB_ENTER",
+		"prefix": "KB_ENTER",
+		"scope": "keyboard.lua"
+	},
+	"KB_TAB": {
+		"body": "KB_TAB",
+		"description": "5.3\n\nKB_TAB",
+		"prefix": "KB_TAB",
+		"scope": "keyboard.lua"
+	},
+	"KB_BACKSPACE": {
+		"body": "KB_BACKSPACE",
+		"description": "5.3\n\nKB_BACKSPACE",
+		"prefix": "KB_BACKSPACE",
+		"scope": "keyboard.lua"
+	},
+	"KB_INSERT": {
+		"body": "KB_INSERT",
+		"description": "5.3\n\nKB_INSERT",
+		"prefix": "KB_INSERT",
+		"scope": "keyboard.lua"
+	},
+	"KB_DELETE": {
+		"body": "KB_DELETE",
+		"description": "5.3\n\nKB_DELETE",
+		"prefix": "KB_DELETE",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT": {
+		"body": "KB_RIGHT",
+		"description": "5.3\n\nKB_RIGHT",
+		"prefix": "KB_RIGHT",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT": {
+		"body": "KB_LEFT",
+		"description": "5.3\n\nKB_LEFT",
+		"prefix": "KB_LEFT",
+		"scope": "keyboard.lua"
+	},
+	"KB_DOWN": {
+		"body": "KB_DOWN",
+		"description": "5.3\n\nKB_DOWN",
+		"prefix": "KB_DOWN",
+		"scope": "keyboard.lua"
+	},
+	"KB_UP": {
+		"body": "KB_UP",
+		"description": "5.3\n\nKB_UP",
+		"prefix": "KB_UP",
+		"scope": "keyboard.lua"
+	},
+	"KB_PAGE_UP": {
+		"body": "KB_PAGE_UP",
+		"description": "5.3\n\nKB_PAGE_UP",
+		"prefix": "KB_PAGE_UP",
+		"scope": "keyboard.lua"
+	},
+	"KB_PAGE_DOWN": {
+		"body": "KB_PAGE_DOWN",
+		"description": "5.3\n\nKB_PAGE_DOWN",
+		"prefix": "KB_PAGE_DOWN",
+		"scope": "keyboard.lua"
+	},
+	"KB_HOME": {
+		"body": "KB_HOME",
+		"description": "5.3\n\nKB_HOME",
+		"prefix": "KB_HOME",
+		"scope": "keyboard.lua"
+	},
+	"KB_END": {
+		"body": "KB_END",
+		"description": "5.3\n\nKB_END",
+		"prefix": "KB_END",
+		"scope": "keyboard.lua"
+	},
+	"KB_CAPS_LOCK": {
+		"body": "KB_CAPS_LOCK",
+		"description": "5.3\n\nKB_CAPS_LOCK",
+		"prefix": "KB_CAPS_LOCK",
+		"scope": "keyboard.lua"
+	},
+	"KB_SCROLL_LOCK": {
+		"body": "KB_SCROLL_LOCK",
+		"description": "5.3\n\nKB_SCROLL_LOCK",
+		"prefix": "KB_SCROLL_LOCK",
+		"scope": "keyboard.lua"
+	},
+	"KB_NUM_LOCK": {
+		"body": "KB_NUM_LOCK",
+		"description": "5.3\n\nKB_NUM_LOCK",
+		"prefix": "KB_NUM_LOCK",
+		"scope": "keyboard.lua"
+	},
+	"KB_PRINT_SCREEN": {
+		"body": "KB_PRINT_SCREEN",
+		"description": "5.3\n\nKB_PRINT_SCREEN",
+		"prefix": "KB_PRINT_SCREEN",
+		"scope": "keyboard.lua"
+	},
+	"KB_PAUSE": {
+		"body": "KB_PAUSE",
+		"description": "5.3\n\nKB_PAUSE",
+		"prefix": "KB_PAUSE",
+		"scope": "keyboard.lua"
+	},
+	"KB_F1": {
+		"body": "KB_F1",
+		"description": "5.3\n\nKB_F1",
+		"prefix": "KB_F1",
+		"scope": "keyboard.lua"
+	},
+	"KB_F2": {
+		"body": "KB_F2",
+		"description": "5.3\n\nKB_F2",
+		"prefix": "KB_F2",
+		"scope": "keyboard.lua"
+	},
+	"KB_F3": {
+		"body": "KB_F3",
+		"description": "5.3\n\nKB_F3",
+		"prefix": "KB_F3",
+		"scope": "keyboard.lua"
+	},
+	"KB_F4": {
+		"body": "KB_F4",
+		"description": "5.3\n\nKB_F4",
+		"prefix": "KB_F4",
+		"scope": "keyboard.lua"
+	},
+	"KB_F5": {
+		"body": "KB_F5",
+		"description": "5.3\n\nKB_F5",
+		"prefix": "KB_F5",
+		"scope": "keyboard.lua"
+	},
+	"KB_F6": {
+		"body": "KB_F6",
+		"description": "5.3\n\nKB_F6",
+		"prefix": "KB_F6",
+		"scope": "keyboard.lua"
+	},
+	"KB_F7": {
+		"body": "KB_F7",
+		"description": "5.3\n\nKB_F7",
+		"prefix": "KB_F7",
+		"scope": "keyboard.lua"
+	},
+	"KB_F8": {
+		"body": "KB_F8",
+		"description": "5.3\n\nKB_F8",
+		"prefix": "KB_F8",
+		"scope": "keyboard.lua"
+	},
+	"KB_F9": {
+		"body": "KB_F9",
+		"description": "5.3\n\nKB_F9",
+		"prefix": "KB_F9",
+		"scope": "keyboard.lua"
+	},
+	"KB_F10": {
+		"body": "KB_F10",
+		"description": "5.3\n\nKB_F10",
+		"prefix": "KB_F10",
+		"scope": "keyboard.lua"
+	},
+	"KB_F11": {
+		"body": "KB_F11",
+		"description": "5.3\n\nKB_F11",
+		"prefix": "KB_F11",
+		"scope": "keyboard.lua"
+	},
+	"KB_F12": {
+		"body": "KB_F12",
+		"description": "5.3\n\nKB_F12",
+		"prefix": "KB_F12",
+		"scope": "keyboard.lua"
+	},
+	"KB_F13": {
+		"body": "KB_F13",
+		"description": "5.3\n\nKB_F13",
+		"prefix": "KB_F13",
+		"scope": "keyboard.lua"
+	},
+	"KB_F14": {
+		"body": "KB_F14",
+		"description": "5.3\n\nKB_F14",
+		"prefix": "KB_F14",
+		"scope": "keyboard.lua"
+	},
+	"KB_F15": {
+		"body": "KB_F15",
+		"description": "5.3\n\nKB_F15",
+		"prefix": "KB_F15",
+		"scope": "keyboard.lua"
+	},
+	"KB_F16": {
+		"body": "KB_F16",
+		"description": "5.3\n\nKB_F16",
+		"prefix": "KB_F16",
+		"scope": "keyboard.lua"
+	},
+	"KB_F17": {
+		"body": "KB_F17",
+		"description": "5.3\n\nKB_F17",
+		"prefix": "KB_F17",
+		"scope": "keyboard.lua"
+	},
+	"KB_F18": {
+		"body": "KB_F18",
+		"description": "5.3\n\nKB_F18",
+		"prefix": "KB_F18",
+		"scope": "keyboard.lua"
+	},
+	"KB_F19": {
+		"body": "KB_F19",
+		"description": "5.3\n\nKB_F19",
+		"prefix": "KB_F19",
+		"scope": "keyboard.lua"
+	},
+	"KB_F20": {
+		"body": "KB_F20",
+		"description": "5.3\n\nKB_F20",
+		"prefix": "KB_F20",
+		"scope": "keyboard.lua"
+	},
+	"KB_F21": {
+		"body": "KB_F21",
+		"description": "5.3\n\nKB_F21",
+		"prefix": "KB_F21",
+		"scope": "keyboard.lua"
+	},
+	"KB_F22": {
+		"body": "KB_F22",
+		"description": "5.3\n\nKB_F22",
+		"prefix": "KB_F22",
+		"scope": "keyboard.lua"
+	},
+	"KB_F23": {
+		"body": "KB_F23",
+		"description": "5.3\n\nKB_F23",
+		"prefix": "KB_F23",
+		"scope": "keyboard.lua"
+	},
+	"KB_F24": {
+		"body": "KB_F24",
+		"description": "5.3\n\nKB_F24",
+		"prefix": "KB_F24",
+		"scope": "keyboard.lua"
+	},
+	"KB_F25": {
+		"body": "KB_F25",
+		"description": "5.3\n\nKB_F25",
+		"prefix": "KB_F25",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_0": {
+		"body": "KB_KP_0",
+		"description": "5.3\n\nKB_KP_0",
+		"prefix": "KB_KP_0",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_1": {
+		"body": "KB_KP_1",
+		"description": "5.3\n\nKB_KP_1",
+		"prefix": "KB_KP_1",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_2": {
+		"body": "KB_KP_2",
+		"description": "5.3\n\nKB_KP_2",
+		"prefix": "KB_KP_2",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_3": {
+		"body": "KB_KP_3",
+		"description": "5.3\n\nKB_KP_3",
+		"prefix": "KB_KP_3",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_4": {
+		"body": "KB_KP_4",
+		"description": "5.3\n\nKB_KP_4",
+		"prefix": "KB_KP_4",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_5": {
+		"body": "KB_KP_5",
+		"description": "5.3\n\nKB_KP_5",
+		"prefix": "KB_KP_5",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_6": {
+		"body": "KB_KP_6",
+		"description": "5.3\n\nKB_KP_6",
+		"prefix": "KB_KP_6",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_7": {
+		"body": "KB_KP_7",
+		"description": "5.3\n\nKB_KP_7",
+		"prefix": "KB_KP_7",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_8": {
+		"body": "KB_KP_8",
+		"description": "5.3\n\nKB_KP_8",
+		"prefix": "KB_KP_8",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_9": {
+		"body": "KB_KP_9",
+		"description": "5.3\n\nKB_KP_9",
+		"prefix": "KB_KP_9",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_DECIMAL": {
+		"body": "KB_KP_DECIMAL",
+		"description": "5.3\n\nKB_KP_DECIMAL",
+		"prefix": "KB_KP_DECIMAL",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_DIVIDE": {
+		"body": "KB_KP_DIVIDE",
+		"description": "5.3\n\nKB_KP_DIVIDE",
+		"prefix": "KB_KP_DIVIDE",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_MULTIPLY": {
+		"body": "KB_KP_MULTIPLY",
+		"description": "5.3\n\nKB_KP_MULTIPLY",
+		"prefix": "KB_KP_MULTIPLY",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_SUBTRACT": {
+		"body": "KB_KP_SUBTRACT",
+		"description": "5.3\n\nKB_KP_SUBTRACT",
+		"prefix": "KB_KP_SUBTRACT",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_ADD": {
+		"body": "KB_KP_ADD",
+		"description": "5.3\n\nKB_KP_ADD",
+		"prefix": "KB_KP_ADD",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_ENTER": {
+		"body": "KB_KP_ENTER",
+		"description": "5.3\n\nKB_KP_ENTER",
+		"prefix": "KB_KP_ENTER",
+		"scope": "keyboard.lua"
+	},
+	"KB_KP_EQUAL": {
+		"body": "KB_KP_EQUAL",
+		"description": "5.3\n\nKB_KP_EQUAL",
+		"prefix": "KB_KP_EQUAL",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT_SHIFT": {
+		"body": "KB_LEFT_SHIFT",
+		"description": "5.3\n\nKB_LEFT_SHIFT",
+		"prefix": "KB_LEFT_SHIFT",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT_CONTROL": {
+		"body": "KB_LEFT_CONTROL",
+		"description": "5.3\n\nKB_LEFT_CONTROL",
+		"prefix": "KB_LEFT_CONTROL",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT_ALT": {
+		"body": "KB_LEFT_ALT",
+		"description": "5.3\n\nKB_LEFT_ALT",
+		"prefix": "KB_LEFT_ALT",
+		"scope": "keyboard.lua"
+	},
+	"KB_LEFT_SUPER": {
+		"body": "KB_LEFT_SUPER",
+		"description": "5.3\n\nKB_LEFT_SUPER",
+		"prefix": "KB_LEFT_SUPER",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT_SHIFT": {
+		"body": "KB_RIGHT_SHIFT",
+		"description": "5.3\n\nKB_RIGHT_SHIFT",
+		"prefix": "KB_RIGHT_SHIFT",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT_CONTROL": {
+		"body": "KB_RIGHT_CONTROL",
+		"description": "5.3\n\nKB_RIGHT_CONTROL",
+		"prefix": "KB_RIGHT_CONTROL",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT_ALT": {
+		"body": "KB_RIGHT_ALT",
+		"description": "5.3\n\nKB_RIGHT_ALT",
+		"prefix": "KB_RIGHT_ALT",
+		"scope": "keyboard.lua"
+	},
+	"KB_RIGHT_SUPER": {
+		"body": "KB_RIGHT_SUPER",
+		"description": "5.3\n\nKB_RIGHT_SUPER",
+		"prefix": "KB_RIGHT_SUPER",
+		"scope": "keyboard.lua"
+	},
+	"KB_MENU": {
+		"body": "KB_MENU",
+		"description": "5.3\n\nKB_MENU",
+		"prefix": "KB_MENU",
+		"scope": "keyboard.lua"
+	},
+	"MOUSE_LEFT": {
+		"body": "MOUSE_LEFT",
+		"description": "5.3\n\nMOUSE_LEFT",
+		"prefix": "MOUSE_LEFT",
+		"scope": "mouse.lua"
+	},
+	"MOUSE_RIGHT": {
+		"body": "MOUSE_RIGHT",
+		"description": "5.3\n\nMOUSE_RIGHT",
+		"prefix": "MOUSE_RIGHT",
+		"scope": "mouse.lua"
+	}
+}
