@@ -21,8 +21,5 @@
 			}
 		]
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/xentu/xentu-lua-snippets-vscode.git"
-	}
+	"repository": "https://github.com/xentu/xentu-lua-snippets-vscode"
 }
