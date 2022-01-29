@@ -1,7 +1,7 @@
 {
 	"name": "xentu-lua-snippets-vscode",
     "displayName": "Xentu Lua Snippets for VS Code",
-    "author": "Kodaloid <contact@kodaloid.com>",
+    "author": "Kodaloid <info@kodaloid.com>",
 	"description": "Lua language snippets for the Xentu game engine.",
 	"version": "0.0.1",
 	"publisher": "Kodaloid",
