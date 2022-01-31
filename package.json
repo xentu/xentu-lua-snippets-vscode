@@ -4,7 +4,7 @@
     "author": "Kodaloid <info@kodaloid.com>",
 	"description": "Lua language snippets for the Xentu game engine.",
 	"version": "0.0.0",
-	"publisher": "Kodaloid",
+	"publisher": "Xentu",
 	"icon": "images/logo.png",
 	"license": "MIT",
 	"engines": {
